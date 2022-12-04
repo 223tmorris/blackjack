@@ -27,7 +27,7 @@ function add(){
 	document.getElementById("rCount").innerHTML = rCount;
 	
 	remaining--;
-	tCount = Math.trunc(rCount/Math.round(remaining/52));
+	tCount = Math.trunc(rCount/(remaining/52));
 	document.getElementById("tCount").innerHTML = tCount;
 	console.log(remaining, Math.round(remaining/52), tCount);
 }
